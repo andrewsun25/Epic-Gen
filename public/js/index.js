@@ -133,10 +133,14 @@ function initGUI() {
         },
         addPerson: function() {
             generatePeople();
+        },
+        addFloor: function() {
+            generateRooms(1, gParams.MEAN_VERTS_PERFLOOR, gParams.MEAN_FLOOR_HEIGHT, gParams.MEAN_FLOOR_SIZE);
         }
     };
     gui.add(buttons, 'refresh');
     gui.add(buttons, 'addPerson');
+    gui.add(buttons, 'addFloor');
 
     // var addButton = {
     //     addModel: function() {
